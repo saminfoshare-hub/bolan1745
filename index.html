@@ -1039,8 +1039,8 @@ table.admin-table{width:100%; border-collapse:collapse; min-width:760px;}
    ========================================================================== */
 const SUPABASE_URL = 'https://izzqzffytobqpxzzlcjc.supabase.co/rest/v1/';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml6enF6ZmZ5dG9icXB4enpsY2pjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY0NDcwNTksImV4cCI6MjEwMjAyMzA1OX0.ZXdXdAKx6I37sjoDPQ82iF3MuO9e4ocSvl9WEC1G86A';
-const supabaseConfigured = !SUPABASE_URL.startsWith('https://izzqzffytobqpxzzlcjc.supabase.co/rest/v1/') && !SUPABASE_ANON_KEY.startsWith('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml6enF6ZmZ5dG9icXB4enpsY2pjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY0NDcwNTksImV4cCI6MjEwMjAyMzA1OX0.ZXdXdAKx6I37sjoDPQ82iF3MuO9e4ocSvl9WEC1G86A');
-const supabase = supabaseConfigured ? window.supabase.createClient(https://izzqzffytobqpxzzlcjc.supabase.co/rest/v1/, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml6enF6ZmZ5dG9icXB4enpsY2pjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY0NDcwNTksImV4cCI6MjEwMjAyMzA1OX0.ZXdXdAKx6I37sjoDPQ82iF3MuO9e4ocSvl9WEC1G86A) : null;
+const supabaseConfigured = !SUPABASE_URL.startsWith('PASTE_') && !SUPABASE_ANON_KEY.startsWith('PASTE_');
+const supabase = supabaseConfigured ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
 
 /* ==========================================================================
    STATE — the single source of truth is now your Supabase database.
